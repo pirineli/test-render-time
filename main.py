@@ -12,4 +12,4 @@ def read_root():
 @app.get("/now")
 async def agora():
     agora_sp = datetime.now(fuso_sp)
-    return {"now": agora_sp.strftime('%Y-%m-%d %H:%M:%S %z')}
+    return {"now": agora_sp.strftime('%d-%m-%Y %H:%M:%S %z')}
